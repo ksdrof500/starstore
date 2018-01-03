@@ -31,7 +31,7 @@
 
             <TextView
                 style="@style/textHistory"
-                android:layout_weight="2"
+                android:layout_weight="1"
                 android:text="@{@string/qtd + viewModel.qtd}"
                 app:font="@{`semi_bold`}" />
 

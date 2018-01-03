@@ -90,7 +90,6 @@ public class MainActivity extends AppCompatActivity
         if (fragment != null) {
             getSupportFragmentManager().beginTransaction()
                     .replace(R.id.contents, fragment)
-                    .addToBackStack(null)
                     .commit();
         }
     }

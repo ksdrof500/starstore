@@ -2,8 +2,8 @@
 <resources>
 
     //DP
-    <dimen name="item_width">190dp</dimen>
-    <dimen name="item_image_height">150dp</dimen>
+    <dimen name="item_width">150dp</dimen>
+    <dimen name="item_image_height">125dp</dimen>
     <dimen name="item_history_height">136dp</dimen>
     <dimen name="item_margin_start_end">16dp</dimen>
     <dimen name="margin_fap">20dp</dimen>
@@ -18,9 +18,9 @@
     <dimen name="margin_top_total">-8dp</dimen>
 
     //SP
-    <dimen name="text_large">24sp</dimen>
-    <dimen name="text_medium">16sp</dimen>
-    <dimen name="text_medium_little">14sp</dimen>
-    <dimen name="text_little">12sp</dimen>
+    <dimen name="text_large">20sp</dimen>
+    <dimen name="text_medium">12sp</dimen>
+    <dimen name="text_medium_little">11sp</dimen>
+    <dimen name="text_little">9sp</dimen>
 
 </resources>
