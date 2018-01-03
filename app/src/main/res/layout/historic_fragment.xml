@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="br.com.starstore.viewmodel.HistoricViewModel" />
+    </data>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/itemList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:visible="@{viewModel.showContent}" />
+
+        <TextView
+            style="@style/DefaultEmptyView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:drawableTop="@drawable/background_home"
+            android:gravity="center"
+            android:text="@string/empty_buy"
+            android:textColor="@color/textColorLight"
+            app:font="@{`semi_bold`}"
+            app:visible="@{viewModel.showEmpty}" />
+
+    </RelativeLayout>
+
+</layout>

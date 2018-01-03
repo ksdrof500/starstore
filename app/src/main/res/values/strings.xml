@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">StarStore</string>
+    <string name="hint_search">Buscar</string>
+    <string name="title_menu_history">Histórico</string>
+    <string name="title_menu_home">Home</string>
+    <string name="title_menu_home_cart">Carrinho</string>
+
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Fechar menu</string>
+
+    <string name="error_default">Parece que algo deu errado e a operação não foi concluída. Por favor tente novamente.</string>
+    <string name="error_empty">Favor selecionar um produto.</string>
+    <string name="empty_default">Ops, parece que sua busca galactica já foi exterminada.</string>
+    <string name="empty_buy">Os clones estão aguardando a primeira compra</string>
+
+    <string name="ok">OK</string>
+    <string name="confirm">Comprar</string>
+    <string name="atention">Atenção</string>
+    <string name="title_card">Dados do Cartão</string>
+
+
+    <string name="total">Total\n</string>
+    <string name="qtd">QTD\n</string>
+    <string name="finish_buy">Finalizar Compra</string>
+    <string name="add_cart">Adicionar ao carrinho</string>
+
+    <!--Default-->
+    <string name="plus">+</string>
+    <string name="less">-</string>
+
+
+    <!--Dialog-->
+    <string name="dialog_number">Numero do cartão</string>
+    <string name="dialog_cvv">CVV</string>
+    <string name="dialog_date_exp">Data de vencimento</string>
+    <string name="dialog_name">Nome do titular</string>
+
+
+
+</resources>

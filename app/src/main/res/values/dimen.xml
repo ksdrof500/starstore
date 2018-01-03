@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //DP
+    <dimen name="item_width">190dp</dimen>
+    <dimen name="item_image_height">150dp</dimen>
+    <dimen name="item_history_height">136dp</dimen>
+    <dimen name="item_margin_start_end">16dp</dimen>
+    <dimen name="margin_fap">20dp</dimen>
+    <dimen name="item_margin">8dp</dimen>
+    <dimen name="list_thumb_size">90dp</dimen>
+    <dimen name="item_sub_title_height">32dp</dimen>
+    <dimen name="item_description_margin">10dp</dimen>
+    <dimen name="item_description_padding">5dp</dimen>
+    <dimen name="stroke">2dp</dimen>
+    <dimen name="divider">1dp</dimen>
+    <dimen name="weight">0dp</dimen>
+    <dimen name="margin_top_total">-8dp</dimen>
+
+    //SP
+    <dimen name="text_large">24sp</dimen>
+    <dimen name="text_medium">16sp</dimen>
+    <dimen name="text_medium_little">14sp</dimen>
+    <dimen name="text_little">12sp</dimen>
+
+</resources>

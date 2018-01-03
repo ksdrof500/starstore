@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--suppress AndroidUnknownAttribute -->
+    <data>
+
+        <variable
+            name="viewModel"
+            type="br.com.starstore.viewmodel.HistoricItemViewModel" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_history_height"
+        android:background="@color/colorImage"
+        android:paddingEnd="@dimen/item_margin_start_end"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/thumb"
+            style="@style/ListItemTitle"
+            android:layout_width="@dimen/list_thumb_size"
+            android:layout_height="@dimen/list_thumb_size"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/item_margin_start_end"
+            android:layout_marginStart="@dimen/item_margin_start_end"
+            android:drawableTop="@drawable/ic_credit_card"
+            android:gravity="center"
+            android:text="@{viewModel.numberCard}" />
+
+        <TextView
+            android:id="@+id/qtd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/thumb"
+            android:layout_alignParentEnd="true"
+            android:text="@{viewModel.date}"
+            android:textColor="@color/colorPrimary" />
+
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/ListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@id/thumb"
+            android:layout_toEndOf="@id/thumb"
+            android:ellipsize="end"
+            android:text="@{viewModel.name}" />
+
+
+        <TextView
+            style="@style/ListItemSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/title"
+            android:layout_toEndOf="@id/thumb"
+            android:text="@{viewModel.value}" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/divider"
+            android:layout_alignParentBottom="true"
+            android:background="@color/textColorLight" />
+
+    </RelativeLayout>
+</layout>

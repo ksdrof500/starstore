@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="splash_time_out">1000</integer>
+    <integer name="max_lines_item_home">2</integer>
+    <integer name="max_length_cvv">3</integer>
+</resources>
