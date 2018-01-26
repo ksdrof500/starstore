@@ -93,6 +93,7 @@
                         android:layout_weight="1"
                         android:background="@drawable/background_add_cart"
                         android:gravity="center"
+                        android:inputType="numberDecimal"
                         android:text="@={`` + viewModel.qtd}"
                         android:textColor="@color/colorPrimary"
                         android:textSize="@dimen/text_large"
