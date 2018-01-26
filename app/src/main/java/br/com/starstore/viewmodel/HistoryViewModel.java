@@ -58,8 +58,8 @@ public class HistoryViewModel {
     }
 
     public void finishCart(String name, String cardNumber, String cvv, String date) {
-        if (!TextUtils.isEmpty(name) || !TextUtils.isEmpty(cardNumber)
-                || !TextUtils.isEmpty(cvv) || !TextUtils.isEmpty(date)) {
+        if (!TextUtils.isEmpty(name) && !TextUtils.isEmpty(cardNumber)
+                && !TextUtils.isEmpty(cvv) && !TextUtils.isEmpty(date)) {
 
             storeService.sendDataCard(new Card(cardNumber, cart.total, cvv, name, date))
                     .subscribeOn(Schedulers.io())
