@@ -13,7 +13,7 @@ import dagger.Module;
 import dagger.Provides;
 
 /**
- * Created by filipenunes on 1/2/18.
+ * Created by filipenunes on 04/20/18.
  */
 @Module
 public class RoomModule {

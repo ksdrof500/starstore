@@ -6,7 +6,7 @@ import android.arch.persistence.room.RoomDatabase;
 import br.com.starstore.model.HistoricCart;
 
 /**
- * Created by filipenunes on 1/2/18.
+ * Created by filipenunes on 04/20/18.
  */
 
 @Database(entities = {HistoricCart.class}, version = 1, exportSchema = false)

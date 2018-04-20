@@ -24,7 +24,7 @@ import br.com.starstore.ui.adapter.ItemHistoricListAdapter;
 import br.com.starstore.viewmodel.HistoricViewModel;
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 public class HistoricFragment extends Fragment implements HistoricInteraction {

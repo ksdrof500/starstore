@@ -9,7 +9,7 @@ import retrofit2.http.POST;
 
 
 /**
- * Created by filipenunes on 2/9/16.
+ * Created by filipenunes on 04/20/18.
  */
 public interface StoreApiService {
 

@@ -21,7 +21,7 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 public class HistoryViewModel {

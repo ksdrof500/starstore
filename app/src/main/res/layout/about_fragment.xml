@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <import type="br.com.starstore.BuildConfig" />
+
+        <variable
+            name="aboutVM"
+            type="br.com.starstore.viewmodel.AboutViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="?attr/actionBarSize">
+
+        <LinearLayout
+            android:id="@+id/linear_layout_options_about"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:visibility="visible">
+
+            <TextView
+                style="@style/AboutItem"
+                android:onClick="@{() -> aboutVM.sendEmail()}"
+                android:text="@string/title_contact"
+                app:font="@{`semi_bold`}" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/about_divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/about_option_cell"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/AboutTextView"
+                    android:layout_width="@dimen/weight"
+                    android:layout_height="@dimen/about_option_cell"
+                    android:layout_weight="1"
+                    android:text="@string/label_current_version"
+                    app:font="@{`semi_bold`}" />
+
+                <TextView
+                    style="@style/AboutTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/about_option_cell"
+                    android:text="@{BuildConfig.VERSION_NAME}"
+                    app:font="@{`semi_bold`}" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/aboutProgress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            tools:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

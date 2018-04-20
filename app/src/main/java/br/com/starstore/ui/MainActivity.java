@@ -17,7 +17,7 @@ import br.com.starstore.databinding.MainActivityBinding;
 import br.com.starstore.interaction.MainInteraction;
 
 /**
- * Created by filipenunes on 26/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public class MainActivity extends AppCompatActivity
@@ -68,6 +68,9 @@ public class MainActivity extends AppCompatActivity
                     break;
                 case R.id.nav_history:
                     fragment = new HistoricFragment();
+                    break;
+                case R.id.nav_about:
+                    fragment = new AboutFragment();
                     break;
                 default:
                     break;

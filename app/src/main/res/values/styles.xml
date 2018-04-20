@@ -91,4 +91,16 @@
         <item name="android:maxLines">@integer/max_lines_item_home</item>
     </style>
 
+    <style name="AboutTextView">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+    </style>
+
+    <style name="AboutItem" parent="AboutTextView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/about_option_cell</item>
+        <item name="android:drawableRight">@android:drawable/ic_dialog_email</item>
+    </style>
+
 </resources>

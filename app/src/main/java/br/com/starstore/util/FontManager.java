@@ -9,7 +9,7 @@ import java.lang.annotation.RetentionPolicy;
 import java.util.HashMap;
 
 /**
- * Created by filipenunes on 2/9/16.
+ * Created by filipenunes on 04/20/18.
  */
 public class FontManager {
 

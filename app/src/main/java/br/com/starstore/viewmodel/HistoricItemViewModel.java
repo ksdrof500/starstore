@@ -7,7 +7,7 @@ import br.com.starstore.model.HistoricCart;
 import br.com.starstore.util.StringUtil;
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 public class HistoricItemViewModel extends BaseObservable {
 

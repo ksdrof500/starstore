@@ -3,11 +3,11 @@ package br.com.starstore.viewmodel;
 import android.os.Handler;
 
 import br.com.starstore.common.interaction.CommonNavigation;
-import br.com.starstore.ui.MainActivity;
+import br.com.starstore.ui.LoginActivity;
 
 
 /**
- * Created by filipenunes on 23/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public class SplashViewModel {
@@ -20,7 +20,7 @@ public class SplashViewModel {
     }
 
     public void moveToNextTouched() {
-        commonNavigation.moveForward(new MainActivity());
+        commonNavigation.moveForward(new LoginActivity());
     }
 
 

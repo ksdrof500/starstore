@@ -29,7 +29,7 @@ import br.com.starstore.util.textwatcher.FreeFormatWatcher;
 import br.com.starstore.viewmodel.HistoryViewModel;
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 public class HistoryFragment extends Fragment implements HistoryInteraction {

@@ -10,7 +10,7 @@ import io.reactivex.Observable;
 
 
 /**
- * Created by filipenunes on 4/19/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 public class StoreService {

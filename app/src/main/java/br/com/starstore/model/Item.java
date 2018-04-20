@@ -6,7 +6,7 @@ import java.io.Serializable;
 
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public class Item implements Serializable {

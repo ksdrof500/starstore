@@ -4,7 +4,7 @@ import android.databinding.BaseObservable;
 import android.databinding.ObservableBoolean;
 
 /**
- * Created by filipenunes on 26/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 public abstract class CommonViewModel extends BaseObservable {
 

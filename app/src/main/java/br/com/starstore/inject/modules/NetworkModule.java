@@ -23,7 +23,7 @@ import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
- * Created by filipenunes on 23/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Module
 public class NetworkModule {

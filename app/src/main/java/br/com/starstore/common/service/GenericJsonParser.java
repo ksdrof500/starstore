@@ -3,7 +3,7 @@ package br.com.starstore.common.service;
 import com.google.gson.Gson;
 
 /**
- * Created by filipenunes on 4/19/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public class GenericJsonParser {

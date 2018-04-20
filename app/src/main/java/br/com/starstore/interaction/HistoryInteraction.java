@@ -6,7 +6,7 @@ import br.com.starstore.common.interaction.CommonNotification;
 import br.com.starstore.model.Item;
 
 /**
- * Created by filipenunes on 26/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public interface HistoryInteraction extends CommonNotification {

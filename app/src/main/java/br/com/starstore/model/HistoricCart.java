@@ -11,7 +11,7 @@ import br.com.starstore.util.StringUtil;
 
 
 /**
- * Created by filipenunes on 1/2/18.
+ * Created by filipenunes on 04/20/18.
  */
 @Entity(tableName = "historic")
 public class HistoricCart {

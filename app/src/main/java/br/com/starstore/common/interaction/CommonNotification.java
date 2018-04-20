@@ -1,7 +1,7 @@
 package br.com.starstore.common.interaction;
 
 /**
- * Created by filipenunes on 23/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 public interface CommonNotification {
 

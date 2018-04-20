@@ -11,7 +11,7 @@ import br.com.starstore.common.interaction.CommonNavigation;
 import br.com.starstore.viewmodel.SplashViewModel;
 
 /**
- * Created by filipenunes on 26/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 
 public class SplashActivity extends AppCompatActivity implements CommonNavigation {

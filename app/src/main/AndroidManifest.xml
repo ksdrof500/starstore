@@ -27,6 +27,11 @@
             android:name=".ui.MainActivity"
             android:theme="@style/HomeTheme" />
 
+        <activity
+            android:name=".ui.LoginActivity"
+            android:theme="@style/HomeTheme"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

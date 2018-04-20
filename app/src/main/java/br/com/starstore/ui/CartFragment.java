@@ -33,7 +33,7 @@ import br.com.starstore.util.AlertUtil;
 import br.com.starstore.viewmodel.CartViewModel;
 
 /**
- * Created by filipenunes on 12/26/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 public class CartFragment extends Fragment implements CartInteraction,
@@ -53,6 +53,7 @@ public class CartFragment extends Fragment implements CartInteraction,
         StoreApp.getAppComponent().inject(this);
         getActivity().setTitle(R.string.title_menu_home);
     }
+
 
     @Override
     public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {

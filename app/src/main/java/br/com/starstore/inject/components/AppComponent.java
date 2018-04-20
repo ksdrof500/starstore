@@ -15,7 +15,7 @@ import br.com.starstore.viewmodel.CartViewModel;
 import dagger.Component;
 
 /**
- * Created by filipenunes on 23/12/17.
+ * Created by filipenunes on 04/20/18.
  */
 @Singleton
 @Component(modules = {AppModule.class, NetworkModule.class, RoomModule.class})
