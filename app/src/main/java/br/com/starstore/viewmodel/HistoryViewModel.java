@@ -26,9 +26,9 @@ import io.reactivex.schedulers.Schedulers;
 @Singleton
 public class HistoryViewModel {
 
-    private HistoryInteraction historyInteraction;
     public ObservableField<Integer> qtd = new ObservableField<>(0);
     public ObservableField<String> totalCart = new ObservableField<>();
+    private HistoryInteraction historyInteraction;
     private CartService cartService;
     private StoreService storeService;
     private HistoricDataSource historicDataSource;

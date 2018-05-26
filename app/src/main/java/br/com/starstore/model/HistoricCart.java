@@ -18,7 +18,7 @@ public class HistoricCart {
 
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    private  int id;
+    private int id;
 
     @ColumnInfo(name = "total")
     private double total;

@@ -13,6 +13,7 @@
     <string name="error_empty">Favor selecionar um produto.</string>
     <string name="empty_default">Ops, parece que sua busca galactica já foi exterminada.</string>
     <string name="empty_buy">Os clones estão aguardando a primeira compra</string>
+    <string name="login">Fazer login </string>
 
     <string name="ok">OK</string>
     <string name="confirm">Comprar</string>
@@ -43,6 +44,8 @@
     <string name="dialog_date_exp">Data de vencimento</string>
     <string name="dialog_name">Nome do titular</string>
 
+
+    <string name="error_auth">Erro para autenticar</string>
 
 
 </resources>

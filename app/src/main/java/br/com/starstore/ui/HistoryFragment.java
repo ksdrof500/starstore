@@ -25,6 +25,7 @@ import br.com.starstore.interaction.HistoryInteraction;
 import br.com.starstore.model.Item;
 import br.com.starstore.ui.adapter.ItemHistoryListAdapter;
 import br.com.starstore.util.AlertUtil;
+import br.com.starstore.util.StringUtil;
 import br.com.starstore.util.textwatcher.FreeFormatWatcher;
 import br.com.starstore.viewmodel.HistoryViewModel;
 
@@ -83,22 +84,22 @@ public class HistoryFragment extends Fragment implements HistoryInteraction {
     @Override
     public void showDialogCard() {
         MaterialDialog dialog = new MaterialDialog.Builder(getContext())
-                        .title(R.string.title_card)
-                        .customView(R.layout.card_dialog, true)
-                        .positiveText(R.string.confirm)
-                        .negativeText(android.R.string.cancel)
-                        .onPositive(
-                                (dialog1, which) -> viewModel.finishCart(nameCard.getText().toString(),
-                                        numberCard.getText().toString(),
-                                        cvv.getText().toString(),
-                                        date.getText().toString()))
-                        .build();
+                .title(R.string.title_card)
+                .customView(R.layout.card_dialog, true)
+                .positiveText(R.string.confirm)
+                .negativeText(android.R.string.cancel)
+                .onPositive(
+                        (dialog1, which) -> viewModel.finishCart(nameCard.getText().toString(),
+                                numberCard.getText().toString(),
+                                cvv.getText().toString(),
+                                date.getText().toString()))
+                .build();
 
         nameCard = dialog.getCustomView().findViewById(R.id.name_card);
         numberCard = dialog.getCustomView().findViewById(R.id.number_card);
-        numberCard.addTextChangedListener(new FreeFormatWatcher("####-####-####-####", numberCard));
+        numberCard.addTextChangedListener(new FreeFormatWatcher(StringUtil.NUMBER_CARD_MASK, numberCard));
         date = dialog.getCustomView().findViewById(R.id.date_card);
-        date.addTextChangedListener(new FreeFormatWatcher("##/##", date));
+        date.addTextChangedListener(new FreeFormatWatcher(StringUtil.DATE_MASK, date));
         cvv = dialog.getCustomView().findViewById(R.id.cvv_card);
 
         dialog.show();

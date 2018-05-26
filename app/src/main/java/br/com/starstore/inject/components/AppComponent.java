@@ -19,12 +19,16 @@ import dagger.Component;
  */
 @Singleton
 @Component(modules = {AppModule.class, NetworkModule.class, RoomModule.class})
-public interface  AppComponent {
+public interface AppComponent {
 
     void inject(CartViewModel homeItemViewModel);
+
     void inject(CartFragment cartFragment);
+
     void inject(CartItemViewModel cartItemViewModel);
+
     void inject(HistoryFragment historyFragment);
+
     void inject(HistoricFragment historicFragment);
 
     FontManager getFontManager();

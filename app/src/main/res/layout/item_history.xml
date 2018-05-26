@@ -45,8 +45,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@id/thumb"
-            android:layout_toStartOf="@id/qtd"
             android:layout_toEndOf="@id/thumb"
+            android:layout_toStartOf="@id/qtd"
             android:ellipsize="end"
             android:text="@{viewModel.name}" />
 
@@ -55,8 +55,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/title"
-            android:layout_toStartOf="@id/qtd"
             android:layout_toEndOf="@id/thumb"
+            android:layout_toStartOf="@id/qtd"
             android:text="@{viewModel.price}" />
 
         <View

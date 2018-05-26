@@ -42,7 +42,7 @@ public class CartItemViewModel extends BaseObservable {
     }
 
     public void addProduct() {
-       CartViewModel.addProduct(item);
+        CartViewModel.addProduct(item);
     }
 }
 

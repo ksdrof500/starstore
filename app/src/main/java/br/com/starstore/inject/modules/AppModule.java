@@ -38,7 +38,7 @@ public class AppModule {
     @Provides
     @Singleton
     public AnalyticsManager provideAnalyticsManager() {
-        return  new AnalyticsManager(application.getApplicationContext());
+        return new AnalyticsManager(application.getApplicationContext());
     }
 
     @Provides

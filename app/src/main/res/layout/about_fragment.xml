@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
+
         <import type="br.com.starstore.BuildConfig" />
 
         <variable
@@ -19,9 +20,9 @@
 
         <LinearLayout
             android:id="@+id/linear_layout_options_about"
-            android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:orientation="vertical"
             tools:visibility="visible">
 
             <TextView

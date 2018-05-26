@@ -29,13 +29,13 @@ public class CartViewModel extends CommonViewModel {
 
     private static final int INIT_QTD = 0;
     private static final int NOT_EXIST_ITEM = -1;
+    public ObservableField<Integer> qtd = new ObservableField<>(INIT_QTD);
+    public ObservableField<String> totalProductCart = new ObservableField<>("0");
     private CartInteraction cartInteraction;
     private Observable<Item> itemsListObservable;
     private Item item;
     private Cart cart;
     private CartService cartService;
-    public ObservableField<Integer> qtd = new ObservableField<>(INIT_QTD);
-    public ObservableField<String> totalProductCart = new ObservableField<>("0");
 
     @Inject
     public CartViewModel(CartService cartService) {

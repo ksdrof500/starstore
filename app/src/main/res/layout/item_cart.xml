@@ -13,14 +13,13 @@
         android:layout_width="@dimen/item_width"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/item_margin_start_end"
-        android:layout_marginTop="@dimen/item_margin_start_end"
-        >
+        android:layout_marginTop="@dimen/item_margin_start_end">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center_horizontal"
             android:background="@drawable/background_item_cart"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
             <TextView
@@ -40,9 +39,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/item_image_height"
-                android:background="@color/colorImage"
-                android:layout_marginStart="@dimen/stroke"
                 android:layout_marginEnd="@dimen/stroke"
+                android:layout_marginStart="@dimen/stroke"
+                android:background="@color/colorImage"
                 android:contentDescription="@{viewModel.name}"
                 android:scaleType="fitXY"
                 app:imageUrl="@{viewModel.image}" />

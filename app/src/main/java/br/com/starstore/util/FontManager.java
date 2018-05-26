@@ -13,17 +13,11 @@ import java.util.HashMap;
  */
 public class FontManager {
 
-    @StringDef({BOLD, REGULAR, SEMI_BOLD})
-    @Retention(RetentionPolicy.SOURCE)
-    public @interface FontType{}
-
     public static final String BOLD = "bold";
     public static final String REGULAR = "regular";
     public static final String SEMI_BOLD = "semi_bold";
-
     private Context context;
     private HashMap<String, Typeface> typefaces;
-
     public FontManager(Context context) {
         this.context = context;
         typefaces = new HashMap<>();
@@ -38,5 +32,10 @@ public class FontManager {
         }
 
         return typeface;
+    }
+
+    @StringDef({BOLD, REGULAR, SEMI_BOLD})
+    @Retention(RetentionPolicy.SOURCE)
+    public @interface FontType {
     }
 }

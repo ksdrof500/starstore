@@ -5,7 +5,7 @@
     <item
         android:id="@+id/action_search"
         android:orderInCategory="1"
-        app:showAsAction="always"
+        android:title="@string/hint_search"
         app:actionViewClass="android.widget.SearchView"
-        android:title="@string/hint_search"/>
+        app:showAsAction="always" />
 </menu>

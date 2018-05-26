@@ -13,5 +13,6 @@ import br.com.starstore.model.Item;
 
 public interface CartInteraction extends CommonNotification, CommonNavigationFragment {
     void displayItems(List<Item> items);
+
     void stateBottom();
 }

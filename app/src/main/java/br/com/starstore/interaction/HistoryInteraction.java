@@ -11,7 +11,10 @@ import br.com.starstore.model.Item;
 
 public interface HistoryInteraction extends CommonNotification {
     void displayItems(List<Item> items);
+
     void showDialogCard();
+
     void showAlert(String message);
+
     void moveToHistoric();
 }

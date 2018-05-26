@@ -12,6 +12,10 @@ public class StoreApp extends Application {
 
     private static AppComponent component;
 
+    public static AppComponent getAppComponent() {
+        return component;
+    }
+
     @Override
     public void onCreate() {
 
@@ -28,11 +32,6 @@ public class StoreApp extends Application {
                             getResources().getString(R.string.API_STORE_URL)))
                     .build();
         }
-    }
-
-
-    public static AppComponent getAppComponent() {
-        return component;
     }
 
 }

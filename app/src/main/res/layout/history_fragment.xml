@@ -24,8 +24,8 @@
             android:id="@+id/detail_history"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/divider"
             android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/divider"
             android:background="@drawable/background_add_cart"
             android:orientation="horizontal">
 
@@ -52,7 +52,7 @@
                 android:paddingStart="@dimen/item_margin"
                 android:text="@string/finish_buy"
                 android:textColor="@color/colorAccent"
-                app:font="@{`bold`}"/>
+                app:font="@{`bold`}" />
 
         </LinearLayout>
     </RelativeLayout>

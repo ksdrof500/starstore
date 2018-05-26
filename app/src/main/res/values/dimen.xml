@@ -17,6 +17,7 @@
     <dimen name="weight">0dp</dimen>
     <dimen name="margin_top_total">-8dp</dimen>
     <dimen name="about_option_cell">68dp</dimen>
+    <dimen name="image_login">300dp</dimen>
 
 
     //SP

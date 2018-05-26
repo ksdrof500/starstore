@@ -10,6 +10,7 @@ import br.com.starstore.interaction.AboutInteraction;
 public class AboutViewModel {
 
     AboutInteraction aboutInteraction;
+
     public AboutViewModel(AboutInteraction aboutInteraction) {
         this.aboutInteraction = aboutInteraction;
     }

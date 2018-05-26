@@ -1,8 +1,10 @@
 package br.com.starstore.util;
 
 import android.app.Activity;
+import android.content.Context;
 import android.support.v7.app.AlertDialog;
 import android.util.Log;
+import android.widget.Toast;
 
 import br.com.starstore.R;
 
@@ -25,5 +27,9 @@ public class AlertUtil {
         } catch (Exception e) {
             Log.e(AlertUtil.class.toString(), e.getMessage());
         }
+    }
+
+    public static void showToatsError(Context context) {
+        Toast.makeText(context, context.getString(R.string.error_auth), Toast.LENGTH_SHORT).show();
     }
 }

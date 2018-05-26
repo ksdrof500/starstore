@@ -10,5 +10,6 @@ import br.com.starstore.model.HistoricCart;
 
 public interface HistoricRepository {
     List<HistoricCart> findAll();
+
     long insert(HistoricCart historicCart);
 }

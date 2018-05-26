@@ -11,5 +11,6 @@
     <color name="textColorPrimary">#333333</color>
     <color name="windowBackground">#f6f4ef</color>
     <color name="about_divider">#e7e7e7</color>
+    <color name="color_login">#4885ed</color>
 
 </resources>
