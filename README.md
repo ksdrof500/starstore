@@ -35,7 +35,7 @@ Execute build
 * [OkHttp](http://square.github.io/okhttp/) - Http
 * [Gson](https://github.com/google/gson/) - Json
 * [Picasso](http://square.github.io/picasso/) - Image dowloading
-* [Gson](https://github.com/google/gson) - Json
+* [Espresso](https://google.com) - The framework, espresso UI Testing
 
 
 ## Authors
