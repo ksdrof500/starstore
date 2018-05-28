@@ -7,6 +7,7 @@ project.ext {
     firebaseVersion = "10.0.1"
     roomVersion = "1.0.0"
     lifecycleVersion = "1.0.0"
+    espressoVersion = "3.0.1"
 }
 
 
@@ -65,7 +66,11 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
 
+    // Test
     testCompile 'junit:junit:4.12'
+    androidTestCompile "com.android.support.test.espresso:espresso-core:$project.espressoVersion"
+    androidTestCompile "com.android.support.test.espresso:espresso-intents:$project.espressoVersion"
+    androidTestCompile 'com.android.support.test:runner:1.0.1'
 
     // Google
     compile "com.android.support:appcompat-v7:$project.supportLibraryVersion"
@@ -75,7 +80,7 @@ dependencies {
     compile 'com.google.android:flexbox:0.3.0'
     compile 'com.afollestad.material-dialogs:core:0.9.6.0'
 
-    //Firebase
+    // Firebase
     implementation "com.google.firebase:firebase-core:$project.firebaseVersion"
     implementation "com.google.firebase:firebase-crash:$project.firebaseVersion"
     implementation "com.google.firebase:firebase-config:$project.firebaseVersion"
