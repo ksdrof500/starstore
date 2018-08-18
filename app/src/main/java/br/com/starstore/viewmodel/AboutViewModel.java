@@ -19,4 +19,8 @@ public class AboutViewModel {
         aboutInteraction.sendEmail();
     }
 
+    public void callCellPhone() {
+        aboutInteraction.callPhone();
+    }
+
 }

@@ -17,12 +17,13 @@ public class AlertUtil {
 
     public static void showAlert(Activity activity, String message) {
         try {
-            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity);
+            AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(activity,  R.style.Theme_AppCompat_Light_Dialog);
             alertDialogBuilder.setTitle(activity.getResources().getString(R.string.atention));
             alertDialogBuilder.setMessage(message);
             alertDialogBuilder.setNegativeButton(activity.getResources().getString(R.string.ok), null);
 
             AlertDialog alertDialog = alertDialogBuilder.create();
+
             alertDialog.show();
         } catch (Exception e) {
             Log.e(AlertUtil.class.toString(), e.getMessage());

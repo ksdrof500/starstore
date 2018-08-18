@@ -1,14 +1,21 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:windowBackground">@drawable/background_theme</item>
+        <item name="android:windowBackground">@drawable/background_new</item>
         <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="android:color">@color/windowBackground</item>
+        <item name="android:textColorSecondary">@color/windowBackground</item>
+        <item name="colorPrimaryDark">@color/windowBackground</item>
+        <item name="android:textColorPrimary">@color/windowBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
     <style name="HomeTheme" parent="AppTheme">
-        <item name="android:windowBackground">@color/windowBackground</item>
+        <item name="android:windowBackground">@drawable/background_home</item>
+    </style>
+
+    <style name="LoginTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/background_login</item>
     </style>
 
     <style name="HomeItemTitle">
@@ -100,7 +107,20 @@
     <style name="AboutItem" parent="AboutTextView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/about_option_cell</item>
-        <item name="android:drawableRight">@android:drawable/ic_dialog_email</item>
+    </style>
+
+    <style name="FacebookLoginButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:drawableStart">@drawable/ic_facebook</item>
+        <item name="android:background">@drawable/shape_facebook</item>
+        <item name="android:padding">@dimen/item_description_margin</item>
+        <item name="android:text">@string/login_facebook</item>
+        <item name="android:textSize">@dimen/text_medium_large</item>
+        <item name="android:textColor">@color/secondaryColor</item>
+        <item name="android:layout_marginBottom">@dimen/item_sub_title_height</item>
+        <item name="android:src">@android:color/transparent</item>
     </style>
 
 </resources>

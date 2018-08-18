@@ -26,6 +26,8 @@
                 style="@style/HomeItemTitle"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
                 android:text="@{viewModel.name}"
                 app:font="@{`semi_bold`}" />
 
@@ -52,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="@dimen/item_margin"
                 android:drawableEnd="@drawable/ic_add_shopping_cart_black"
+                android:drawableTint="@color/colorPrimaryDark"
                 android:onClick="@{() -> viewModel.addProduct()}"
                 android:text="@{viewModel.price}"
                 app:font="@{`regular`}" />

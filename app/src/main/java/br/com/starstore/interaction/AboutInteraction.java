@@ -7,4 +7,5 @@ package br.com.starstore.interaction;
 
 public interface AboutInteraction {
     void sendEmail();
+    void callPhone();
 }

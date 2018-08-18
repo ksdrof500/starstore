@@ -8,6 +8,11 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.facebook.CallbackManager;
+import com.facebook.FacebookCallback;
+import com.facebook.FacebookException;
+import com.facebook.login.LoginManager;
+import com.facebook.login.LoginResult;
 import com.google.android.gms.auth.api.Auth;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
@@ -15,6 +20,8 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.firebase.auth.FirebaseAuth;
+
+import java.util.Arrays;
 
 import br.com.starstore.R;
 import br.com.starstore.databinding.LoginActivityBinding;
@@ -32,7 +39,7 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
     private static final int RC_SIGN_IN = 9001;
     private GoogleApiClient mGoogleApiClient;
     private LoginActivityBinding binding;
-
+    private CallbackManager callbackManager;
     private LoginViewModel loginViewModel;
 
     @Override
@@ -42,6 +49,13 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
         loginViewModel = new LoginViewModel(this, FirebaseAuth.getInstance());
         binding.setLoginVM(loginViewModel);
         configureAuth();
+        configureAuthFacebook();
+    }
+
+    private void configureAuthFacebook() {
+        callbackManager = CallbackManager.Factory.create();
+        LoginManager.getInstance().logInWithReadPermissions(LoginActivity.this, Arrays.asList("email", "public_profile"));
+
     }
 
     private void configureAuth() {
@@ -80,12 +94,34 @@ public class LoginActivity extends AppCompatActivity implements GoogleApiClient.
                 loginViewModel.updateUI();
             }
         }
+        callbackManager.onActivityResult(requestCode, resultCode, data);
     }
 
     @Override
     public void login() {
         Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
         startActivityForResult(signInIntent, RC_SIGN_IN);
+    }
+
+    @Override
+    public void loginFacebook() {
+        LoginManager.getInstance().registerCallback(callbackManager,
+                new FacebookCallback<LoginResult>() {
+                    @Override
+                    public void onSuccess(LoginResult loginResult) {
+                        loginViewModel.handleFacebookAccessToken(loginResult.getAccessToken());
+                    }
+
+                    @Override
+                    public void onCancel() {
+                        loginViewModel.updateUI();
+                    }
+
+                    @Override
+                    public void onError(FacebookException error) {
+                        loginViewModel.updateUI();
+                    }
+                });
     }
 
     @Override

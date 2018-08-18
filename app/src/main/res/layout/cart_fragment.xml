@@ -17,14 +17,24 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
+            <ImageView
+                android:layout_width="@dimen/item_width"
+                android:layout_height="@dimen/item_width"
+                android:src="@drawable/error"
+                android:layout_above="@id/text_not_fount"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="@dimen/margin_fap"
+                app:visible="@{viewModel.showEmpty}"/>
+
             <TextView
+                android:id="@+id/text_not_fount"
                 style="@style/DefaultEmptyView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_centerInParent="true"
-                android:drawableBottom="@drawable/ic_placeholder"
                 android:text="@string/empty_default"
-                android:textColor="@color/textColorLight"
+                android:textAlignment="center"
+                android:textColor="@color/primaryTextColor"
                 app:font="@{`semi_bold`}"
                 app:visible="@{viewModel.showEmpty}" />
 
@@ -54,7 +64,7 @@
                 android:onClick="@{() -> viewModel.goHistory()}"
                 android:padding="@dimen/item_margin_start_end"
                 android:text="@{viewModel.totalProductCart}"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/windowBackground"
                 android:textSize="@dimen/text_medium"
                 app:font="@{`bold`}" />
         </RelativeLayout>
@@ -85,6 +95,7 @@
                         android:background="@drawable/background_add_cart"
                         android:onClick="@{() -> viewModel.removeQtd()}"
                         android:text="@string/less"
+                        android:textColor="@color/secondaryColor"
                         android:textSize="@dimen/text_large" />
 
                     <EditText
@@ -105,6 +116,7 @@
                         android:background="@drawable/background_add_cart"
                         android:onClick="@{() -> viewModel.addQtd()}"
                         android:text="@string/plus"
+                        android:textColor="@color/secondaryColor"
                         android:textSize="@dimen/text_large" />
 
                 </LinearLayout>
@@ -116,7 +128,8 @@
                     android:background="@color/colorAccent"
                     android:onClick="@{() -> viewModel.saveProduct()}"
                     android:text="@string/add_cart"
-                    android:textColor="@color/colorPrimary" />
+                    app:font="@{`bold`}"
+                    android:textColor="@color/windowBackground" />
             </LinearLayout>
         </android.support.v4.widget.NestedScrollView>
 

@@ -12,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 
 import com.afollestad.materialdialogs.MaterialDialog;
+import com.afollestad.materialdialogs.Theme;
 
 import java.util.List;
 
@@ -88,6 +89,7 @@ public class HistoryFragment extends Fragment implements HistoryInteraction {
                 .customView(R.layout.card_dialog, true)
                 .positiveText(R.string.confirm)
                 .negativeText(android.R.string.cancel)
+                .theme(Theme.LIGHT)
                 .onPositive(
                         (dialog1, which) -> viewModel.finishCart(nameCard.getText().toString(),
                                 numberCard.getText().toString(),

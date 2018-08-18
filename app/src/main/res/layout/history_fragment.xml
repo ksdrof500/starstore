@@ -33,6 +33,7 @@
                 style="@style/textHistory"
                 android:layout_weight="1"
                 android:text="@{@string/qtd + viewModel.qtd}"
+                android:textColor="@color/secondaryColor"
                 app:font="@{`semi_bold`}" />
 
             <TextView
@@ -40,6 +41,7 @@
                 android:layout_weight="3"
                 android:paddingEnd="@dimen/item_margin_start_end"
                 android:paddingStart="@dimen/item_margin_start_end"
+                android:textColor="@color/secondaryColor"
                 android:text="@{@string/total + viewModel.totalCart}"
                 app:font="@{`semi_bold`}" />
 
@@ -51,7 +53,7 @@
                 android:paddingEnd="@dimen/item_margin"
                 android:paddingStart="@dimen/item_margin"
                 android:text="@string/finish_buy"
-                android:textColor="@color/colorAccent"
+                android:textColor="@color/windowBackground"
                 app:font="@{`bold`}" />
 
         </LinearLayout>

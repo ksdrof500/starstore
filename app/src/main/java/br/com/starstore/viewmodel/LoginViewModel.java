@@ -3,8 +3,10 @@ package br.com.starstore.viewmodel;
 import android.app.Activity;
 import android.databinding.ObservableField;
 
+import com.facebook.AccessToken;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.GoogleAuthProvider;
 
@@ -41,6 +43,11 @@ public class LoginViewModel {
                 });
     }
 
+    public void handleFacebookAccessToken(AccessToken token) {
+        AuthCredential credential = FacebookAuthProvider.getCredential(token.getToken());
+        firebaseAuth.signInWithCredential(credential).addOnCompleteListener(task -> loginInteraction.moveForward(new MainActivity()));
+    }
+
     public void updateUI() {
         if (firebaseAuth.getCurrentUser() != null) {
             showLogin.set(false);
@@ -52,5 +59,9 @@ public class LoginViewModel {
 
     public void loginClick() {
         loginInteraction.login();
+    }
+
+    public void loginFacebookClick() {
+        loginInteraction.loginFacebook();
     }
 }

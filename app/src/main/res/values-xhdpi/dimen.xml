@@ -7,6 +7,7 @@
 
     //SP
     <dimen name="text_large">22sp</dimen>
+    <dimen name="text_medium_large">18sp</dimen>
     <dimen name="text_medium">14sp</dimen>
     <dimen name="text_medium_little">12sp</dimen>
     <dimen name="text_little">10sp</dimen>
