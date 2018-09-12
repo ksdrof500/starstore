@@ -3,8 +3,6 @@ Stone project.
 - He function also landscap.
 - UI tested hdpi, xhdpi and xxhdpi
 
-PS: 23mb .are of images, I have been taking the internet and they are not suitable for mobile
-
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development
